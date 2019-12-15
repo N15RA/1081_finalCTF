@@ -1,6 +1,6 @@
 version: "3"
 
-service:
+services:
   chess:
     build: chess/.
     image: 1081_final_chess
