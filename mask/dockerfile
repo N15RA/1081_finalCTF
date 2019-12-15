@@ -24,6 +24,6 @@ RUN chmod 775 /home/ctf/*.sh
 USER ctf
 
 # Set problem env var
-ENV PROB=lab1
+ENV PROB=prob
 
 CMD ["/home/ctf/entry.sh"]
