@@ -16,3 +16,11 @@ services:
     ports:
       - "8889:1337"
     restart: always
+
+  halloworld:
+    build: halloworld/.
+    image: 1081_final_halloworld
+    container_name: halloworld_pt
+    ports:
+      - "8890:80"
+    restart: always

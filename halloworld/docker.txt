@@ -1,0 +1,3 @@
+docker run -d -p 8080:80 -v $PWD:/var/www/html php:7.0-apache
+docker exec -it 131be681ef54 bash
+docker commit 131be681ef54 william31212/final_ctf
