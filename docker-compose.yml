@@ -1,0 +1,18 @@
+version: "3"
+
+service:
+  chess:
+    build: chess/.
+    image: 1081_final_chess
+    container_name: chess_mix
+    ports:
+      - "8888:80"
+    restart: always
+
+  mask:
+    build: mask/.
+    image: 1081_final_mask
+    container_name: mask_rsa
+    ports:
+      - "8889:1337"
+    restart: always
