@@ -24,11 +24,19 @@ services:
     ports:
       - "8890:80"
     restart: always
-  
+
   crazyfire:
     build: crazyfire/.
     image: 1081_final_crazyfire
     container_name: crazyfire_xss
     ports:
       - "8891:80"
+    restart: always
+
+  icejj:
+    build: icejj/.
+    image: 1081_final_icejj
+    container_name: icejj_html
+    ports:
+      - "8892:80"
     restart: always
