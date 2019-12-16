@@ -24,3 +24,11 @@ services:
     ports:
       - "8890:80"
     restart: always
+  
+  crazyfire:
+    build: crazyfire/.
+    image: 1081_final_crazyfire
+    container_name: crazyfire_xss
+    ports:
+      - "8891:80"
+    restart: always
